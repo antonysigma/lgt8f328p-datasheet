@@ -1,0 +1,55 @@
+\documentclass[letter,10pt]{refart}
+
+\usepackage{CJKutf8}
+\usepackage{lipsum}
+\usepackage{microtype}
+\usepackage{palatino}
+\usepackage[utf8]{inputenc}
+\usepackage{nameref}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+%\usepackage{parallel}
+%\newcommand{\bilingal}[2]{%
+%\begin{Parallel}[c]{}{}
+%\ParallelLText{%
+%\begin{CJK*}{UTF8}{gbsn}#1\end{CJK*}%
+%}
+%\ParallelRText{#2}
+%\end{Parallel}
+%}
+
+\newcommand{\bilingal}[2]{%
+\begin{CJK*}{UTF8}{gbsn}#1\end{CJK*}%
+\par #2%
+}
+
+\def\myref#1{%
+\nameref{#1}\seealso{Page~\pageref{#1} }%
+}
+
+\title{
+8-bit LGT8XM
+RISC Microcontroller with
+In-System Programmable
+FLASH Memory \\
+LGT8F88P
+LGT8F168P
+LGT8F328P \\
+Data book
+Version 1.0.5 \\
+LGT8F328P Programming manual}
+
+\author{LogicGreen}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\include{Chapters/overview}
+\include{Chapters/storage}
+\include{Chapters/hardware_accelerator}
+\include{Chapters/instruction_set}
+
+\end{document}

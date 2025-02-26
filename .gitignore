@@ -1,0 +1,17 @@
+# Exclude all Portable Pixmap Format. We prefer PNG and JPG.
+Images/*.p?m
+
+# Exclude all images for now.
+Images/
+
+# Latex intermediate files.
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.toc
+*.out
+*.synctex.gz
+
+# Final PDF
+main.pdf
