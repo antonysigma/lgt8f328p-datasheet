@@ -1,0 +1,24 @@
+\section{ALU: Arithmetic Logic Unit}
+
+\bilingal{%
+LGT8XM 内部包含了一个 16 位的算术逻辑运算单元，能够在一个周期内完成 16 为数据的
+算术运算。高效的 ALU 与 32 个通用工作寄存器相连。能够在一个周期内完成两个寄存器
+或者寄存器与立即数之间的算术逻辑运算。 ALU 的运算分为三种：算术，逻辑以及位运
+算。%
+}{%
+LGT8XM has a 16-bit ALU, within a single clock cycle can finish 16-bit
+arithmetic operations. The high- performance ALU operates in direct connection
+with all the 32 general purpose working registers. Within a single clock cycle,
+arithmetic operations between 2 registers and an immediate are executed. The ALU
+operations are divided into three main categories – arithmetic, logical, and
+bit-functions.%
+}
+
+\bilingal{%
+同时 ALU 部分也包含了一个单周期的硬件乘法器，能够在一个周期内实现两个 8 位寄存器
+直接的有符号或者无符号运算。 请参考指令集部分的详细介绍。
+}{%
+Meanwhile part of ALU also provide a single cycle hardware multiplier, that
+support signed/unsigned multiplication in a single cycle between 8 bit
+registers. See the Section~\myref{sec:instruction-set} for a detailed description.%
+}

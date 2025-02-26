@@ -8,6 +8,7 @@
 \usepackage{nameref}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{booktabs}
 
 %\usepackage{parallel}
 %\newcommand{\bilingal}[2]{%
@@ -47,9 +48,11 @@ LGT8F328P Programming manual}
 \maketitle
 \tableofcontents
 
-\include{Chapters/overview}
-\include{Chapters/storage}
-\include{Chapters/hardware_accelerator}
-\include{Chapters/instruction_set}
+\input{Chapters/overview}
+\input{Chapters/arithmetic_logic_unit}
+\input{Chapters/status_register}
+\input{Chapters/storage}
+\input{Chapters/hardware_accelerator}
+\input{Chapters/instruction_set}
 
 \end{document}
